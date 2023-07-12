@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href='style.css' />
-  <script src="src/index.js"></script>
-  <title>KidsMDb</title>
+  <title>Movies Database</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h2>Movies Database</h2>
-  
-  <ul>
+
+  <ul id="moviesList">
     <li>
       <h3>The Brave Little Toaster</h3>
       <div>ID: 1</div>
@@ -26,15 +25,18 @@
   </ul>
 
   <section>
-    <form>
+    <form id="searchForm">
       <label for="searchByID">Search By ID</label>
-      <input id="searchByID" type="text" placeholder="Enter ID here"/>
-      <input type="submit" />
+      <input id="searchByID" type="text" placeholder="Enter ID here" required>
+      <button type="submit">Search</button>
     </form>
   </section>
+
   <section id="movieDetails">
     <h4>Title</h4>
     <p>Summary</p>
   </section>
+
+  <script src="src/index.js"></script>
 </body>
 </html>
